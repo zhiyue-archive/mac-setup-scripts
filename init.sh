@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+xcode-select --install
+
 if command -v brew; then
     brew update -v
     rm -rf "$(brew --cache)"
