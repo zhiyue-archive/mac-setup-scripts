@@ -16,4 +16,12 @@ if [[ -n $1 ]]; then
 fi
 
 brew install git
-git clone
+brew install mackup
+brew install mas
+
+git clone https://github.com/zhiyue/mac-setup-scripts
+cd mac-setup-scripts
+
+echo "add brew taps"
+chmod +x homebrew/tap.sh
+bash homebrew/tap.sh
